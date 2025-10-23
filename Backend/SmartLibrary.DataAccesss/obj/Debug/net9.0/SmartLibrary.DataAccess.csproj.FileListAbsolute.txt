@@ -1,0 +1,17 @@
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.DataAccess.deps.json
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.DataAccess.runtimeconfig.json
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.DataAccess.dll
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.DataAccess.pdb
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\bin\Debug\net9.0\SmartLibrary.Models.pdb
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.csproj.AssemblyReference.cache
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.AssemblyInfoInputs.cache
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.AssemblyInfo.cs
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.csproj.CoreCompileInputs.cache
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLib.AA9E4044.Up2Date
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.dll
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\refint\SmartLibrary.DataAccess.dll
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.pdb
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\SmartLibrary.DataAccess.genruntimeconfig.cache
+D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.DataAccesss\obj\Debug\net9.0\ref\SmartLibrary.DataAccess.dll
