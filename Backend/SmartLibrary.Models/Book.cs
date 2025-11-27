@@ -22,11 +22,15 @@ namespace SmartLibrary.Models
         [Timestamp]
         public byte[]? RowVersion { get; set; }
 
+        public string? ImageUrl { get; set; } // IMage property
+
         public int categoryId { get; set; }
         
         [JsonIgnore]
         public Category? category { get; set; }
         // Navigation property for borrowed books
         public ICollection<Borrow> UserBorrows { get; set; } = new List<Borrow>();
+        public ICollection<Favorite> Favorites { get; set; } = new List<Favorite>();
+
     }
 }

@@ -12,6 +12,8 @@ namespace SmartLibrary.Models.Repositories
         IBooksRepository Books { get; }
         IBorrowRepository Borrows{ get; }
         IApplicationUserRepository ApplicationUsers { get; }
+
+        IFavoriteRepository Favorites { get; }
         Task<int> complete();
     }
 }

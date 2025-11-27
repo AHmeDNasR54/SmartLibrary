@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SmartLibrary.Models.DTOs;
-using SmartLibrary.Models.Services;
+using SmartLibrary.Models.Repositories;
+using System.Security.Claims;
 
 namespace Smart_Library.Controllers
 {
@@ -10,52 +12,48 @@ namespace Smart_Library.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IAuthService _authService;
+        private readonly IunitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public UserController(IAuthService authService)
+        public UserController(IunitOfWork unitOfWork, IMapper mapper)
         {
-            _authService = authService;
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> RegisterAsync([FromBody] RegisterDto model)
+        [Authorize]
+        [HttpGet("profile")]
+        public async Task<IActionResult> GetProfile()
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null) return Unauthorized();
 
-            var result = await _authService.RegisterAsync(model);
+            var user = await _unitOfWork.ApplicationUsers.GetUserWithDetailsAsync(userId);
+            if (user == null) return NotFound("User not found");
 
-            if (!result.IsAuthenticated)
-                return BadRequest(result.Message);
+            var dto = new UserProfileDto
+            {
+                Id = user.Id,
+                FullName = $"{user.FirstName} {user.LastName}",
+                Email = user.Email,
+                BorrowHistory = user.UserBorrows.Select(b => new BorrowDetailsDto
+                {
+                    BookId = b.BookId,
+                    BookTitle = b.Book.Title,
+                    BorrowDate = b.BorrowDate,
+                    ReturnDate = b.ReturnDate,
+                    IsReturned=b.IsReturned
+                }).ToList(),
+                FavoriteBooks = user.FavoriteBooks.Select(f => new FavoriteDto
+                {
+                    BookId = f.BookId,
+                    Title = f.Book.Title,
+                    Author = f.Book.Author
+                }).ToList()
+            };
 
-            return Ok(result);
+            return Ok(dto);
         }
-        [HttpPost("login")]
-        public async Task<IActionResult> LoginAsync([FromBody] LoginDto model)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
 
-            var result = await _authService.LoginAsync(model);
-
-            if (!result.IsAuthenticated)
-                return BadRequest(result.Message);
-
-            return Ok(result);
-        }
-        [HttpPost("addrole")]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> AddRoleAsync([FromBody] AddRoleDto model)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            var result = await _authService.AddRoleAsync(model);
-
-            if (!string.IsNullOrEmpty(result))
-                return BadRequest(result);
-
-            return Ok(model);
-        }
     }
 }

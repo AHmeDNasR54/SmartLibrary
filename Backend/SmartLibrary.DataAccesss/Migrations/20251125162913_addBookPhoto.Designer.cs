@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SmartLibrary.DataAccess.Data;
 
@@ -11,9 +12,11 @@ using SmartLibrary.DataAccess.Data;
 namespace SmartLibrary.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251125162913_addBookPhoto")]
+    partial class addBookPhoto
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -335,30 +338,6 @@ namespace SmartLibrary.DataAccess.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("SmartLibrary.Models.Favorite", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Favorites");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -440,36 +419,13 @@ namespace SmartLibrary.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("SmartLibrary.Models.Favorite", b =>
-                {
-                    b.HasOne("SmartLibrary.Models.Book", "Book")
-                        .WithMany("Favorites")
-                        .HasForeignKey("BookId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("SmartLibrary.Models.ApplicationUser", "User")
-                        .WithMany("FavoriteBooks")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Book");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("SmartLibrary.Models.ApplicationUser", b =>
                 {
-                    b.Navigation("FavoriteBooks");
-
                     b.Navigation("UserBorrows");
                 });
 
             modelBuilder.Entity("SmartLibrary.Models.Book", b =>
                 {
-                    b.Navigation("Favorites");
-
                     b.Navigation("UserBorrows");
                 });
 #pragma warning restore 612, 618

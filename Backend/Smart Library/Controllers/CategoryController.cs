@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SmartLibrary.Models;
@@ -10,6 +11,7 @@ namespace Smart_Library.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
     public class CategoryController : ControllerBase
     {
         private readonly IunitOfWork _unitOfWork;
@@ -20,6 +22,7 @@ namespace Smart_Library.Controllers
             _mapp = mapp;
         }
         [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> Get()
         {
              return Ok( await _unitOfWork.Categories.GetAllAsync());

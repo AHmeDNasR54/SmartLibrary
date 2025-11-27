@@ -9,6 +9,7 @@ namespace SmartLibrary.Models.Repositories
 {
     public interface IApplicationUserRepository : IRepository<ApplicationUser>
     {
-       
+        Task<ApplicationUser> GetUserWithDetailsAsync(string userId);
+
     }
 }

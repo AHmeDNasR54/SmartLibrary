@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using SmartLibrary.DataAccess.Data;
 using SmartLibrary.DataAccess.Implemenatation;
 using SmartLibrary.Models;
@@ -18,7 +19,16 @@ namespace SmartLibrary.DataAccess.Implementation
         {
             _context = context;
         }
+        public async Task<ApplicationUser> GetUserWithDetailsAsync(string userId)
+        {
+            return await _context.ApplicationUsers
+                .Include(u => u.UserBorrows)
+                    .ThenInclude(b => b.Book)
+                .Include(u => u.FavoriteBooks)
+                    .ThenInclude(f => f.Book)
+                .FirstOrDefaultAsync(u => u.Id == userId);
+        }
 
-       
+
     }
 }

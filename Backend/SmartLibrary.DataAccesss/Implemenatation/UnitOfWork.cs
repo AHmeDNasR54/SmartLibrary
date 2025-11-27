@@ -20,6 +20,8 @@ namespace SmartLibrary.DataAccess.Implementation
         
         public IApplicationUserRepository ApplicationUsers { get; private set; }
 
+        public IFavoriteRepository Favorites { get; private set; }
+
         public UnitOfWork(ApplicationDbContext context)
         {
             _context = context;
@@ -27,6 +29,7 @@ namespace SmartLibrary.DataAccess.Implementation
             Books = new BookRepository(_context);
             Borrows = new BorrowRepository(_context);
             ApplicationUsers = new ApplicationUserRepository(_context);
+            Favorites = new FavoriteRepository(_context);
 
         }
 

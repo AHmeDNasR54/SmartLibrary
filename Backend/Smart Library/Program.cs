@@ -141,6 +141,7 @@ namespace Smart_Library
 
             app.MapControllers();
 
+            app.UseStaticFiles();
 
             app.Run();
         }

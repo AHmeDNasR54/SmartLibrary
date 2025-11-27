@@ -22,7 +22,9 @@ namespace SmartLibrary.DataAccess.Implementation
 
         public void Update(Borrow borrow)
         {
-            var BorrowInDb = _context.Categories.FirstOrDefault(x => x.Id == borrow.Id);
+            //var BorrowInDb = _context.Categories.FirstOrDefault(x => x.Id == borrow.Id);
+            var BorrowInDb = _context.Borrows.FirstOrDefault(x => x.Id == borrow.Id);
+
             if (BorrowInDb != null)
             {
                 _context.Borrows.Update(borrow);

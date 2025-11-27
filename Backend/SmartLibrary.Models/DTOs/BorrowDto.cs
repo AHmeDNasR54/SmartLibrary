@@ -17,16 +17,7 @@ namespace SmartLibrary.Models.DTOs
             public bool IsReturned { get; set; }
     }
 
-        // لو حابب تختصر المعلومات وقت العرض (GET)
-        public class BorrowDetailsDto
-        {
-            public int Id { get; set; }
-            public string UserName { get; set; }
-            public string BookTitle { get; set; }
-            public DateTime BorrowDate { get; set; }
-            public DateTime? ReturnDate { get; set; }
-            public bool IsReturned { get; set; }
-        }
+        
 
         // لو حابب تعمل DTO خاص بعملية الإنشاء (POST)
         public class CreateBorrowDto

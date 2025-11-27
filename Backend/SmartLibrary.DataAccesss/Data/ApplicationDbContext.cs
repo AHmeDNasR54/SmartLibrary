@@ -20,6 +20,7 @@ namespace SmartLibrary.DataAccess.Data
         public DbSet<ApplicationUser> ApplicationUsers { get; set; } = null!;
         public DbSet<Category> Categories { get; set; } = null!;
 
+        public DbSet<Favorite> Favorites { get; set; } = null!;
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
@@ -38,6 +39,19 @@ namespace SmartLibrary.DataAccess.Data
                 .HasOne(ub => ub.Book)
                 .WithMany(b => b.UserBorrows)
                 .HasForeignKey(ub => ub.BookId);
+
+
+            builder.Entity<Favorite>()
+        .HasOne(f => f.Book)
+        .WithMany(b => b.Favorites)
+        .HasForeignKey(f => f.BookId)
+        .OnDelete(DeleteBehavior.Cascade);
+
+            builder.Entity<Favorite>()
+                .HasOne(f => f.User)
+                .WithMany(u => u.FavoriteBooks)
+                .HasForeignKey(f => f.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
