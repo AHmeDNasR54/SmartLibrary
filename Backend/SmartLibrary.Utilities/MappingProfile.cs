@@ -16,8 +16,12 @@ namespace SmartLibrary.Utilities
 
             CreateMap<Borrow, BorrowDto>().ReverseMap();
 
-            CreateMap<ApplicationUser,RegisterDto>().ReverseMap();
-         
+            //CreateMap<ApplicationUser,RegisterDto>().ReverseMap();
+            CreateMap<RegisterDto, ApplicationUser>()
+    .ForMember(dest => dest.Id, opt => opt.Ignore())
+    .ReverseMap();  // هيسمح بالمابنج العكسي من ApplicationUser لـ RegisterDto
+
+
         }
     }
 }

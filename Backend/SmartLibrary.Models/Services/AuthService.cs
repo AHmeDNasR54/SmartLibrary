@@ -63,6 +63,7 @@ namespace SmartLibrary.Models.Services
 
             return new AuthDto
             {
+                Id = user.Id,
                 Email = user.Email,
                 ExpiresOn = jwtSecurityToken.ValidTo,
                 IsAuthenticated = true,
@@ -87,7 +88,8 @@ namespace SmartLibrary.Models.Services
                 new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
-                new Claim("uid", user.Id)
+                //new Claim("uid", user.Id),
+                new Claim(ClaimTypes.NameIdentifier, user.Id)
             }
             .Union(userClaims)
             .Union(roleClaims);
@@ -127,6 +129,7 @@ namespace SmartLibrary.Models.Services
             authDto.Username = user.UserName;
             authDto.ExpiresOn = jwtSecurityToken.ValidTo;
             authDto.Roles = rolesList.ToList();
+            authDto.Id = user.Id;
 
             return authDto;
 

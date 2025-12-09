@@ -22,3 +22,16 @@ D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Models\obj\Deb
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Models\obj\Debug\net9.0\refint\SmartLibrary.Models.dll
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.pdb
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Models\obj\Debug\net9.0\ref\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\bin\Debug\net9.0\SmartLibrary.Models.deps.json
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\bin\Debug\net9.0\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\bin\Debug\net9.0\SmartLibrary.Models.pdb
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.csproj.AssemblyReference.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.AssemblyInfoInputs.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.AssemblyInfo.cs
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.csproj.CoreCompileInputs.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.sourcelink.json
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\refint\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\SmartLibrary.Models.pdb
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Models\obj\Debug\net9.0\ref\SmartLibrary.Models.dll

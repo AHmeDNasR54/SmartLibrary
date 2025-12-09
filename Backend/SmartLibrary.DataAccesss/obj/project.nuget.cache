@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f/qOo1guZP0=",
+  "dgSpecHash": "CKsjJahcH58=",
   "success": true,
-  "projectFilePath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj",
+  "projectFilePath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -12,6 +12,7 @@
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\jose-jwt\\5.2.0\\jose-jwt.5.2.0.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\9.0.9\\microsoft.aspnetcore.cryptography.internal.9.0.9.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\9.0.9\\microsoft.aspnetcore.cryptography.keyderivation.9.0.9.nupkg.sha512",
+    "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\9.0.9\\microsoft.aspnetcore.identity.entityframeworkcore.9.0.9.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\ahmed nasr\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",

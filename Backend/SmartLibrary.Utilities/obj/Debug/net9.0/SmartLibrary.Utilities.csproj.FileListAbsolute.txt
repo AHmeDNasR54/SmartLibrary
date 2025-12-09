@@ -24,3 +24,19 @@ D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Utilities\obj\
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Utilities\obj\Debug\net9.0\refint\SmartLibrary.Utilities.dll
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.pdb
 D:\Web Developer\Back-End\Projects\API\Smart Library\SmartLibrary.Utilities\obj\Debug\net9.0\ref\SmartLibrary.Utilities.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\bin\Debug\net9.0\SmartLibrary.Utilities.deps.json
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\bin\Debug\net9.0\SmartLibrary.Utilities.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\bin\Debug\net9.0\SmartLibrary.Utilities.pdb
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\bin\Debug\net9.0\SmartLibrary.Models.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\bin\Debug\net9.0\SmartLibrary.Models.pdb
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.csproj.AssemblyReference.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.AssemblyInfoInputs.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.AssemblyInfo.cs
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.csproj.CoreCompileInputs.cache
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.sourcelink.json
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLib.7E55D26D.Up2Date
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\refint\SmartLibrary.Utilities.dll
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\SmartLibrary.Utilities.pdb
+D:\Web Developer\Back-End\Projects\SmartLibrary\Backend\SmartLibrary.Utilities\obj\Debug\net9.0\ref\SmartLibrary.Utilities.dll

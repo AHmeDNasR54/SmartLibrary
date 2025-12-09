@@ -276,7 +276,7 @@ namespace SmartLibrary.DataAccess.Migrations
 
                     b.HasIndex("categoryId");
 
-                    b.ToTable("Books");
+                    b.ToTable("Books", (string)null);
                 });
 
             modelBuilder.Entity("SmartLibrary.Models.Borrow", b =>
@@ -309,7 +309,7 @@ namespace SmartLibrary.DataAccess.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Borrows");
+                    b.ToTable("Borrows", (string)null);
                 });
 
             modelBuilder.Entity("SmartLibrary.Models.Category", b =>
@@ -332,7 +332,7 @@ namespace SmartLibrary.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("SmartLibrary.Models.Favorite", b =>
@@ -356,7 +356,7 @@ namespace SmartLibrary.DataAccess.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Favorites");
+                    b.ToTable("Favorites", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
