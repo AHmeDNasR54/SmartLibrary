@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SmartLibrary.Models;
 using SmartLibrary.Models.DTOs;
@@ -8,6 +9,7 @@ namespace Smart_Library.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class BorrowController : ControllerBase
     {
         private readonly IunitOfWork _unitOfWork;
@@ -21,6 +23,8 @@ namespace Smart_Library.Controllers
 
         // Get all borrows (with related Book & User)
         [HttpGet]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> GetAll()
         {
             var borrows = await _unitOfWork.Borrows
@@ -32,6 +36,8 @@ namespace Smart_Library.Controllers
 
         //  Get specific borrow by Id (with related Book & User)
         [HttpGet("{id}")]
+        //[Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> GetById(int id)
         {
             var borrow = await _unitOfWork.Borrows

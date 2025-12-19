@@ -727,6 +727,23 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "5.0.1",
+          "System.IO.Pipelines": "5.0.2"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.9": {
         "type": "package",
         "dependencies": {
@@ -3099,6 +3116,7 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "AutoMapper": "12.0.1",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.9",
           "System.IdentityModel.Tokens.Jwt": "8.14.0",
           "jose-jwt": "5.2.0"
@@ -4011,6 +4029,25 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.9.0.9.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "sha512": "3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net461/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/net5.0/Microsoft.AspNetCore.Http.Features.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Identity.EntityFrameworkCore/9.0.9": {
@@ -8388,11 +8425,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\Smart Library\\SmartLibrary.Api.csproj",
+      "projectUniqueName": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\SmartLibrary.Api.csproj",
       "projectName": "SmartLibrary.Api",
-      "projectPath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\Smart Library\\SmartLibrary.Api.csproj",
+      "projectPath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\SmartLibrary.Api.csproj",
       "packagesPath": "C:\\Users\\ahmed nasr\\.nuget\\packages\\",
-      "outputPath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\Smart Library\\obj\\",
+      "outputPath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8413,14 +8450,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj": {
-              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj"
+            "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj": {
+              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.DataAccesss\\SmartLibrary.DataAccess.csproj"
             },
-            "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.Models\\SmartLibrary.Models.csproj": {
-              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.Models\\SmartLibrary.Models.csproj"
+            "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.Models\\SmartLibrary.Models.csproj": {
+              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.Models\\SmartLibrary.Models.csproj"
             },
-            "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.Utilities\\SmartLibrary.Utilities.csproj": {
-              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\API\\Smart Library\\SmartLibrary.Utilities\\SmartLibrary.Utilities.csproj"
+            "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.Utilities\\SmartLibrary.Utilities.csproj": {
+              "projectPath": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\SmartLibrary.Utilities\\SmartLibrary.Utilities.csproj"
             }
           }
         }

@@ -35,6 +35,8 @@ namespace Smart_Library.Controllers
 
         // ------------------- GET BY ID ------------------
         [HttpGet("{id}")]
+        [AllowAnonymous]
+
         public async Task<IActionResult> GetbyId(int id)
         {
             var book = await _unitOfWork.Books.GetAsync(b => b.Id == id);

@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "ikzcqfdjVobmvv3+0Kf7MDZuvgF1y8dNhT2OSQ574qI=",
+  "Hash": "MmIgjse5tWYwjZabjFWQ+IzSi9S611pAbNvbkyLD6j4=",
   "Source": "SmartLibrary.Api",
   "BasePath": "_content/SmartLibrary.Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "SmartLibrary.Api\\wwwroot",
+      "Source": "SmartLibrary.Api",
+      "ContentRoot": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\wwwroot\\",
+      "BasePath": "_content/SmartLibrary.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\wwwroot\\images\\3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg",
+      "SourceId": "SmartLibrary.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\wwwroot\\",
+      "BasePath": "_content/SmartLibrary.Api",
+      "RelativePath": "images/3d6f276a-7ce4-4973-a1b8-db58541fbf6d#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zejoe3lm9u",
+      "Integrity": "tf1AjKvCb9XWsBokrY4K4JtYaGXF8OuSe8ryzNX2mBU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg",
+      "AssetFile": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\wwwroot\\images\\3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tf1AjKvCb9XWsBokrY4K4JtYaGXF8OuSe8ryzNX2mBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tf1AjKvCb9XWsBokrY4K4JtYaGXF8OuSe8ryzNX2mBU="
+        }
+      ]
+    },
+    {
+      "Route": "images/3d6f276a-7ce4-4973-a1b8-db58541fbf6d.zejoe3lm9u.jpg",
+      "AssetFile": "D:\\Web Developer\\Back-End\\Projects\\SmartLibrary\\Backend\\Smart Library\\wwwroot\\images\\3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tf1AjKvCb9XWsBokrY4K4JtYaGXF8OuSe8ryzNX2mBU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Nov 2025 17:06:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zejoe3lm9u"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3d6f276a-7ce4-4973-a1b8-db58541fbf6d.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tf1AjKvCb9XWsBokrY4K4JtYaGXF8OuSe8ryzNX2mBU="
+        }
+      ]
+    }
+  ]
 }

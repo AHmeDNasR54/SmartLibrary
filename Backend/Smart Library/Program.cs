@@ -49,6 +49,7 @@ namespace Smart_Library
             {
                 options.SaveToken = true;
                 options.RequireHttpsMetadata = false;
+                options.MapInboundClaims = false;  // ← ADD THIS LINE
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuer = true,
@@ -128,7 +129,7 @@ namespace Smart_Library
             #endregion
 
             // Enable Swagger only in Development
-            if (app.Environment.IsDevelopment())
+            if (app.Environment.IsDevelopment()|| app.Environment.IsProduction())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
