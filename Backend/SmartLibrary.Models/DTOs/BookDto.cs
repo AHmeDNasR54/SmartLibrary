@@ -15,6 +15,7 @@ namespace SmartLibrary.Models.DTOs
         public int TotalCopies { get; set; }
         public int AvailableCopies { get; set; }
         public int categoryId { get; set; }
+        public double Price { get; set; }
 
         public IFormFile? Image { get; set; }
 

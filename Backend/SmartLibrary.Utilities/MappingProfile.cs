@@ -15,6 +15,8 @@ namespace SmartLibrary.Utilities
             CreateMap<Book, BookDto>().ForMember(dest => dest.Image, opt => opt.Ignore()).ReverseMap();
 
             CreateMap<Borrow, BorrowDto>().ReverseMap();
+            CreateMap<CreateBorrowDto, Borrow>();
+
 
             //CreateMap<ApplicationUser,RegisterDto>().ReverseMap();
             CreateMap<RegisterDto, ApplicationUser>()

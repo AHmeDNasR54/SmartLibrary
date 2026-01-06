@@ -17,6 +17,7 @@ namespace SmartLibrary.Models
         public string? CategoryName { get; set; }
         public int TotalCopies { get; set; }
         public int AvailableCopies { get; set; }
+        public double Price { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         [Timestamp]

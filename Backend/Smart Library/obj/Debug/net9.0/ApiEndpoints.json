@@ -96,6 +96,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Price",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -163,6 +168,11 @@
         "IsRequired": false
       },
       {
+        "Name": "Price",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
         "Name": "Image",
         "Type": "Microsoft.AspNetCore.Http.IFormFile",
         "IsRequired": false
@@ -187,6 +197,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Smart_Library.Controllers.BookController",
+    "Method": "GetRecommendedBooks",
+    "RelativePath": "api/Book/recommended",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Smart_Library.Controllers.BorrowController",
     "Method": "GetAll",
     "RelativePath": "api/Borrow",
@@ -206,7 +226,7 @@
     "Parameters": [
       {
         "Name": "borrowDto",
-        "Type": "SmartLibrary.Models.DTOs.BorrowDto",
+        "Type": "SmartLibrary.Models.DTOs.CreateBorrowDto",
         "IsRequired": true
       }
     ],

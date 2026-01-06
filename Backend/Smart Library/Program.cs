@@ -72,7 +72,7 @@ namespace Smart_Library
 
 
 
-
+            builder.Services.AddScoped<IRecommendationService, RecommendationService>();
             builder.Services.AddScoped<IunitOfWork,UnitOfWork>();
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
@@ -136,6 +136,8 @@ namespace Smart_Library
             }
 
             app.UseHttpsRedirection();
+            app.UseAuthentication();
+
 
             app.UseAuthorization();
 

@@ -22,7 +22,6 @@ namespace SmartLibrary.Models.DTOs
         // لو حابب تعمل DTO خاص بعملية الإنشاء (POST)
         public class CreateBorrowDto
         {
-            public int UserId { get; set; }
             public int BookId { get; set; }
         }
  }
