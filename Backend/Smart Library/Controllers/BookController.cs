@@ -163,6 +163,39 @@ namespace Smart_Library.Controllers
             var books = await _recommendationService.GetRecommendedBooksAsync();
             return Ok(books);
         }
+        [HttpGet("search")]
+        [AllowAnonymous]
+
+        public async Task<IActionResult> Search([FromQuery] string title)
+        {
+            if (string.IsNullOrWhiteSpace(title))
+            {
+                return BadRequest(new ApiResponseDto<object>
+                {
+                    Success = false,
+                    Message = "Search term is required"
+                });
+            }
+
+            var books = await _unitOfWork.Books.SearchBooksByTitleAsync(title);
+
+            if (books == null || !books.Any())
+            {
+                return NotFound(new ApiResponseDto<object>
+                {
+                    Success = false,
+                    Message = "Book not found"
+                });
+            }
+
+            return Ok(new ApiResponseDto<List<Book>>
+            {
+                Success = true,
+                Message = "Books retrieved successfully",
+                Data = books
+            });
+        }
+
 
     }
 }

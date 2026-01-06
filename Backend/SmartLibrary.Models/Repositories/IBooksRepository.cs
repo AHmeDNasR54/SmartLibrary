@@ -9,5 +9,6 @@ namespace SmartLibrary.Models.Repositories
     public interface IBooksRepository: IRepository<Book>
     {
          void Update(Book book);
+        Task<List<Book>> SearchBooksByTitleAsync(string searchTerm);
     }
 }

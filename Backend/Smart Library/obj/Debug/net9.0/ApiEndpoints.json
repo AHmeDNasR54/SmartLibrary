@@ -207,6 +207,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Smart_Library.Controllers.BookController",
+    "Method": "Search",
+    "RelativePath": "api/Book/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "title",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Smart_Library.Controllers.BorrowController",
     "Method": "GetAll",
     "RelativePath": "api/Borrow",

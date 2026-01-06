@@ -1,4 +1,5 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
 using SmartLibrary.DataAccess.Data;
 using SmartLibrary.DataAccess.Implemenatation;
 using SmartLibrary.Models;
@@ -29,5 +30,37 @@ namespace SmartLibrary.DataAccess.Implementation
 
             }
         }
+        public async Task<List<Book>> SearchBooksByTitleAsync(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+                return new List<Book>();
+
+            
+            return await _context.Books
+    .Where(b => EF.Functions.Like(b.Title, $"%{searchTerm}%"))
+    .OrderByDescending(b => EF.Functions.Like(b.Title, $"{searchTerm}%"))
+    .ThenBy(b => b.Title)
+    .AsNoTracking()
+    .ToListAsync();
+            /*
+                                    DB - friendly
+
+                        أسرع
+
+                        تقدر تستخدم index(جزئيًا)
+
+                         دي النسخة اللي تحطها في CV
+
+                         Bonus: ترتيب النتائج بذكاء
+
+                        خلي:
+
+                        اللي العنوان بيبدأ بالكلمة يطلع الأول
+
+                        بعده اللي بس يحتوي عليها
+                                    */
+        }
+
+
     }
 }
