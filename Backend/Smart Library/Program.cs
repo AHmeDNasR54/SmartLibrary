@@ -58,7 +58,12 @@ namespace Smart_Library
                     ValidAudience = builder.Configuration["JWT:Audience"],
                     IssuerSigningKey =
                         new SymmetricSecurityKey(
-                            Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"]))
+                            Encoding.UTF8.GetBytes(builder.Configuration["JWT:Key"])),
+
+
+                        ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero
+
 
                 };
             });

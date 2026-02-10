@@ -13,7 +13,7 @@ namespace SmartLibrary.Models.DTOs
             public string Email { get; set; }
 
             public List<BorrowDetailsDto> BorrowHistory { get; set; }
-            public List<FavoriteDto> FavoriteBooks { get; set; }
+            public List<FavoriteDetailsDto> FavoriteBooks { get; set; }
         }
 
     

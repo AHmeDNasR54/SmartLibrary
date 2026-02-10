@@ -48,18 +48,18 @@ namespace Smart_Library.Controllers
                 BorrowHistory = user.UserBorrows.Select(b => new BorrowDetailsDto
                 {
                     Id = b.Id,
-                    BookId = b.BookId,
-                    BookTitle = b.Book.Title,
+                    BookDto = _mapper.Map<BookDto>(b.Book),
                     BorrowDate = b.BorrowDate,
                     ReturnDate = b.ReturnDate,
                     IsReturned = b.IsReturned,
                     UserId = user.Id,
                     UserName = $"{user.FirstName} {user.LastName}"
                 }).ToList(),
-                FavoriteBooks = user.FavoriteBooks.Select(f => new FavoriteDto
+
+                FavoriteBooks = user.FavoriteBooks.Select(f => new FavoriteDetailsDto
                 {
                     Id = f.Id,
-                    BookId = f.BookId,
+                    bookDto = _mapper.Map<BookDto>(f.Book),
                     Title = f.Book.Title,
                     Author = f.Book.Author
                 }).ToList()
