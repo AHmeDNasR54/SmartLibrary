@@ -9,7 +9,7 @@ namespace SmartLibrary.Models.DTOs
     public class FavoriteDetailsDto
     {
         public int Id { get; set; }
-        public BookDto bookDto { get; set; }
+        public BookGetDto bookDto { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
     }

@@ -13,6 +13,17 @@ namespace SmartLibrary.Utilities
             CreateMap<Category, CategoryDto>().ReverseMap();
 
             CreateMap<Book, BookDto>().ForMember(dest => dest.Image, opt => opt.Ignore()).ReverseMap();
+            //CreateMap<Book, BookDto>().ReverseMap();
+            //        CreateMap<Book, BookGetDto>()
+            //.ForMember(dest => dest.Image,
+            //    opt => opt.MapFrom(src =>
+            //        string.IsNullOrEmpty(src.ImageUrl)
+            //            ? null
+            //            : $"{_baseUrl}/uploads/books/{src.ImageUrl}"
+            //    ));
+            CreateMap<Book, BookGetDto>()
+                .ForMember(dest => dest.Image,
+                    opt => opt.MapFrom(src => src.ImageUrl));
 
             CreateMap<Borrow, BorrowDto>().ReverseMap();
             CreateMap<CreateBorrowDto, Borrow>();
